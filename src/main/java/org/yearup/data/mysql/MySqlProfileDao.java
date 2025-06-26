@@ -21,8 +21,8 @@ public class MySqlProfileDao extends MySqlDaoBase implements ProfileDao
     public Profile create(Profile profile) {
         String sql = """
             INSERT INTO profiles
-               (user_id, first_name, last_name, address, city, state, zip, phone)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+               (user_id, first_name, last_name, phone, email, address, city, state, zip)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """;
 
         try (Connection conn = getConnection();
@@ -31,11 +31,12 @@ public class MySqlProfileDao extends MySqlDaoBase implements ProfileDao
             ps.setInt   (1, profile.getUserId());
             ps.setString(2, profile.getFirstName());
             ps.setString(3, profile.getLastName());
-            ps.setString(4, profile.getAddress());
-            ps.setString(5, profile.getCity());
-            ps.setString(6, profile.getState());
-            ps.setString(7, profile.getZip());
-            ps.setString(8, profile.getPhone());
+            ps.setString(4, profile.getPhone());
+            ps.setString(5, profile.getEmail());
+            ps.setString(6, profile.getAddress());
+            ps.setString(7, profile.getCity());
+            ps.setString(8, profile.getState());
+            ps.setString(9, profile.getZip());
             ps.executeUpdate();
 
             // return the newly inserted row
@@ -71,11 +72,12 @@ public class MySqlProfileDao extends MySqlDaoBase implements ProfileDao
             UPDATE profiles SET
                 first_name = ?, 
                 last_name  = ?, 
+                phone      = ?,
+                email      = ?,
                 address    = ?, 
                 city       = ?, 
                 state      = ?, 
-                zip        = ?, 
-                phone      = ?
+                zip        = ?
             WHERE user_id = ?
             """;
 
@@ -84,12 +86,13 @@ public class MySqlProfileDao extends MySqlDaoBase implements ProfileDao
         {
             ps.setString(1, profile.getFirstName());
             ps.setString(2, profile.getLastName());
-            ps.setString(3, profile.getAddress());
-            ps.setString(4, profile.getCity());
-            ps.setString(5, profile.getState());
-            ps.setString(6, profile.getZip());
-            ps.setString(7, profile.getPhone());
-            ps.setInt   (8, userId);
+            ps.setString(3, profile.getPhone());
+            ps.setString(4, profile.getEmail());
+            ps.setString(5, profile.getAddress());
+            ps.setString(6, profile.getCity());
+            ps.setString(7, profile.getState());
+            ps.setString(8, profile.getZip());
+            ps.setInt   (9, userId);
             ps.executeUpdate();
 
             // return the updated row
@@ -111,6 +114,7 @@ public class MySqlProfileDao extends MySqlDaoBase implements ProfileDao
         p.setState    (rs.getString("state"));
         p.setZip      (rs.getString("zip"));
         p.setPhone    (rs.getString("phone"));
+        p.setEmail    (rs.getString("email"));
         return p;
     }
 }

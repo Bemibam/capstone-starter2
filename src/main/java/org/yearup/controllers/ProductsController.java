@@ -36,7 +36,7 @@ public class ProductsController
         categoryId = (categoryId == null) ? -1 : categoryId;
         minPrice   = (minPrice   == null) ? new BigDecimal("-1") : minPrice;
         maxPrice   = (maxPrice   == null) ? new BigDecimal("-1") : maxPrice;
-        color      = (color      == null) ? "" : color;
+        // Don't normalize color - let it be null if not provided
 
         return productDao.search(categoryId, minPrice, maxPrice, color);
     }

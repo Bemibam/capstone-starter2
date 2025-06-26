@@ -26,11 +26,11 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
     {
         List<Product> products = new ArrayList<>();
 
-        // Sentinel values so null = “ignore this filter”
+        // Sentinel values so null = "ignore this filter"
         int cat      = (categoryId == null) ? -1                    : categoryId;
         BigDecimal min = (minPrice   == null) ? new BigDecimal("-1") : minPrice;
         BigDecimal max = (maxPrice   == null) ? new BigDecimal("-1") : maxPrice;
-        String col     = (color       == null) ? ""                  : color;
+        String col     = (color       == null) ? null                : color;
 
         String sql =
                 "SELECT *                                                       " +
@@ -38,7 +38,7 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
                         " WHERE (category_id = ?    OR ?    = -1)                       " +
                         "   AND (price       >= ?    OR ?    = -1)                       " +  // minPrice filter
                         "   AND (price       <= ?    OR ?    = -1)                       " +  // maxPrice filter
-                        "   AND (color       = ?    OR ?    = '')                        ";
+                        "   AND (color       = ?    OR ?    IS NULL)                     ";
 
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(sql))
