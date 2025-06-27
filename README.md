@@ -114,9 +114,17 @@ No dynamic SQL building—just simple “ignore” sentinels (-1 or empty string
 Clean, easy to read, and safe from SQL.
 
 <img width="1072" alt="Screenshot 2025-06-26 at 10 42 32 PM" src="https://github.com/user-attachments/assets/0e86f854-e86b-4b77-97c6-4e944eea760e" />
-![image](https://github.com/user-attachments/assets/dea92888-93e3-40ea-9e5a-066c717bad4f)
-![image](https://github.com/user-attachments/assets/bedc24f4-bcb9-4ea9-bd17-ec3fde4fd248)
-![image](https://github.com/user-attachments/assets/44bcc386-a976-4c9c-b988-b0893ed222ca)
+<img width="1093" alt="Screenshot 2025-06-26 at 10 40 13 PM" src="https://github.com/user-attachments/assets/248a22e0-917f-4686-853f-9625e6400ade" />
+<img width="1093" alt="Screenshot 2025-06-26 at 10 41 18 PM" src="https://github.com/user-attachments/assets/3fc3d740-988e-4d73-b266-4dad3ec58597" />
+<img width="1066" alt="Screenshot 2025-06-26 at 10 41 05 PM" src="https://github.com/user-attachments/assets/5609e18e-6191-4663-84c3-de5a0ecba098" />
+
+
+
+
+
+
+
+
 
 
 
