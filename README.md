@@ -112,3 +112,13 @@ Single query handles every combination of category, price range, and color filte
 No dynamic SQL building—just simple “ignore” sentinels (-1 or empty string).
 
 Clean, easy to read, and safe from SQL.
+
+<img width="1072" alt="Screenshot 2025-06-26 at 10 42 32 PM" src="https://github.com/user-attachments/assets/0e86f854-e86b-4b77-97c6-4e944eea760e" />
+![image](https://github.com/user-attachments/assets/dea92888-93e3-40ea-9e5a-066c717bad4f)
+![image](https://github.com/user-attachments/assets/bedc24f4-bcb9-4ea9-bd17-ec3fde4fd248)
+![image](https://github.com/user-attachments/assets/44bcc386-a976-4c9c-b988-b0893ed222ca)
+
+
+
+
+
