@@ -43,7 +43,12 @@ Features full JWT auth, category & product management, persistent shopping cart,
   - GET    /cart 
   - POST   /cart/products/{productId} 
   - PUT    /cart/products/{productId} → { "quantity": 3 } 
-  - DELETE /cart  
+  - DELETE /cart
+
+👤 User Profile (USER only)
+GET /profile
+
+PUT /profile { name, address, postalCode, etc. }
 
 ---
 Interesting Code
