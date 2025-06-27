@@ -1,7 +1,9 @@
-# 🚀 EasyShop — My Capstone 3 Project
+# 🚀 EasyShop  My Capstone 3 Project
 
 **A Spring Boot + MySQL back end powering a lightweight e-commerce front end**  
 Features full JWT auth, category & product management, persistent shopping cart, and per-user profiles.
+
+![image](https://github.com/user-attachments/assets/bc75cc8b-e895-46da-8f90-f60687dcfb18)
 
 ---
 
@@ -117,6 +119,17 @@ Clean, easy to read, and safe from SQL.
 <img width="1093" alt="Screenshot 2025-06-26 at 10 40 13 PM" src="https://github.com/user-attachments/assets/248a22e0-917f-4686-853f-9625e6400ade" />
 <img width="1093" alt="Screenshot 2025-06-26 at 10 41 18 PM" src="https://github.com/user-attachments/assets/3fc3d740-988e-4d73-b266-4dad3ec58597" />
 <img width="1066" alt="Screenshot 2025-06-26 at 10 41 05 PM" src="https://github.com/user-attachments/assets/5609e18e-6191-4663-84c3-de5a0ecba098" />
+
+_________________________________________________________________
+
+<img width="1181" alt="Screenshot 2025-06-27 at 11 42 15 AM" src="https://github.com/user-attachments/assets/457b2b71-0c23-49c4-878d-333bf4afff64" />
+<img width="1193" alt="Screenshot 2025-06-27 at 11 43 05 AM" src="https://github.com/user-attachments/assets/5d8b2e22-4474-46be-9130-ba86a99a6efa" />
+<img width="1190" alt="Screenshot 2025-06-27 at 11 43 43 AM" src="https://github.com/user-attachments/assets/aa0d64b5-561a-4cdb-8ecb-2ee79bf64f6f" />
+_____________________________________________________________________
+
+
+
+
 
 
 
