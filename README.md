@@ -11,7 +11,7 @@ Features full JWT auth, category & product management, persistent shopping cart,
 
 - **Java 17 & Spring Boot**  
 - **Spring Security** with JWT  
-- **MySQL** (seeded via create_database.sql
+- **MySQL** 
 - **Postman** for API testing  
 
 ---
@@ -31,9 +31,9 @@ Features full JWT auth, category & product management, persistent shopping cart,
 
 - 🛍️ **Products** (ADMIN can add/edit/delete)  
   - GET  /products with filters:  
-    - ?cat=1 
-    - ?minPrice=25&maxPrice=100  
-    - ?color=Red  
+    - Pc=1 
+    - minPrice=25&maxPrice=100  
+    - color=Red  
   - GET  /products/{id}
   - POST /products 
   - PUT  /products/{id}
@@ -44,10 +44,6 @@ Features full JWT auth, category & product management, persistent shopping cart,
   - POST   /cart/products/{productId} 
   - PUT    /cart/products/{productId} → { "quantity": 3 } 
   - DELETE /cart  
-
-- 👤 **User Profile** (USER only) 
-
-
 
 ---
 Interesting Code
@@ -111,7 +107,7 @@ Why this is cool:
 
 Single query handles every combination of category, price range, and color filters.
 
-No dynamic SQL building—just simple “ignore” sentinels (-1 or empty string).
+Need another filter Just pick its ignore value, add an OR? = ignore clause, and bind twice—no new query logic required.
 
 Clean, easy to read, and safe from SQL.
 
