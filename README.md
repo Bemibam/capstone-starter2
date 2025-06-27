@@ -112,7 +112,7 @@ Why this is cool:
 
 Single query handles every combination of category, price range, and color filters.
 
-Need another filter Just pick its ignore value, add an OR? = ignore clause, and bind twice—no new query logic required.
+If I Need another filter I Just pick its ignore value, add an OR? = ignore clause, and bind twice—no new query logic required.
 
 Clean, easy to read, and safe from SQL.
 
