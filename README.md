@@ -1,4 +1,4 @@
-# 🚀 EasyShop  My Capstone 3 Project
+# 🚀 EasyShop 
 
 **A Spring Boot + MySQL back end powering a lightweight e-commerce front end**  
 Features full JWT auth, category & product management, persistent shopping cart, and per-user profiles.
